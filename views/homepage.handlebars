@@ -1,0 +1,64 @@
+
+
+<!-- Jumbotron header -->
+<div class="jumbotron bg-white text-center" style="margin: 3.5em">
+  <h1>Trusted care at your fingertips.</h1>
+  {{#unless logged_in}}
+  <p>Sign up to create your profile </p> 
+  {{/unless}}
+  <div class="mt-4">
+    {{#unless logged_in}}
+    <a href="/signup" class="btn btn-primary btn-lg mr-3 rounded-pill" style="margin-right: 2em">Sign Up</a>
+    <a href="/login" class="btn btn-primary btn-lg mr-3 rounded-pill">Login</a>
+    {{/unless}}
+  </div>
+
+ </div>
+
+ 
+ <div class="container-fluid" style="margin-top: 2em;">
+    <div class="row">
+      <div class="col-md-6 text-center maintext" style="height:500px;">
+        <h2 id="info">About Us</h2>
+    
+        <p>We provide caregivers with the tools needed to spend less time managing the facility & more time sharing their love and knowledge with the children in their care. At Nanny's Diary, 
+        we're dedicated to enhancing & enriching the early childhood experience.</p>
+      </div>
+      <div class="col-md-6 text-white" style="background-image:url('https://www.parentmap.com/sites/default/files/styles/1180x660_scaled_cropped/public/2022-03/iStock-1270939875.jpg?itok=vZA93_g4'); background-size:cover; height:500px;">
+      </div>
+    </div>
+  </div>
+ 
+
+<!-- Services section -->
+<div class="container-fluid bg-grey mt-4">
+  <h2 class="text-center" id="people" style="margin: 1.5em">Reviews</h2>
+  <div class="row" style="margin: 3em">
+    <div class="col-sm-4" >
+
+      <img src="https://media.istockphoto.com/id/1194465593/photo/young-japanese-woman-looking-confident.jpg?s=612x612&w=0&k=20&c=GELaNFFseiu-w9nvdniVnhveaOiTx1CfA3ONddCVwqU=" class="img-responsive rounded-circle" style="width:20% " alt="Image">
+      <h4 class="mt-3">Megan W.</h4>
+      <p>"I think the best thing for me is the time saving, the time saving is BIG. The fact it builds up a child’s portfolio is amazing.
+         They are not having to cut & print images, glue them onto paper, we just have to pop them into Nanny's Diary!"
+    </p>
+    </div>
+    <div class="col-sm-4 "> 
+      <img src="https://t4.ftcdn.net/jpg/04/25/65/97/360_F_425659755_5BaLdNbbCtQbbiz1JNFBikshfiCWI5NE.jpg" class="img-responsive rounded-circle" style="width:30%" alt="Image" class="rounded-circle">
+      <h4 class="mt-3">Betty J.</h4>
+      <p >"With the insight that Nany's Diary provides, parents can ask deeper questions. They can also start to make their 
+        own perceptions of how their child is doing for 8-9 hours a day, and how they are developing."</p>
+    </div>
+    <div class="col-sm-4 rounded-circle">
+      <img src="https://thumbs.dreamstime.com/b/business-woman-headshot-portrait-pretty-female-brunette-grey-sweater-white-background-210447251.jpg" class="img-responsive rounded-circle" style="width:35%" alt="Image">
+      <h4 class="mt-3">Susan B.</h4>
+      <p>Instead of having a basic conversation with the parents at the end of the day, saying a quick ‘they had a good day’ 
+        they can now see all this deep and meaningful learning that is happening throughout the day."</p>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+

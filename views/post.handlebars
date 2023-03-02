@@ -1,0 +1,20 @@
+  {{#if comments.length}}
+  <div class="col-md-6 mx-auto mt-3 child-list" >
+    <h3 class="text-center">Child's comments:</h3>
+
+
+    {{#each comments as |comment|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <a 
+          class="text-light btn btn-outline-primary btn-lg rounded-pill">{{comment.post_comment}}</a>
+          <a>{{comment.date_created}}</a>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger rounded-pill" data-id="{{child.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>

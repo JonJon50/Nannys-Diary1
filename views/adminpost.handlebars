@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-flex align-items-center justify-content-center" style="height: 400px;">
+          <div class="text-center report">
+            <h2 class="reporttitle"  style="margin-top: 6em; padding-bottom: 1em;">Nanny's Report</h2>
+            <img src="https://img.freepik.com/premium-photo/vertical-shot-happy-playful-baby-boy-sitting-floor-living-room-playing-with-toy-laughing_236854-26425.jpg" alt="" style="max-width: 100%;">
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col-md-6">
+        <div class="half-width-form p-4" style="background-color: #f8f9fa; border: 3px solid rgb(247, 243, 243); margin: 5em; width: 100%;">
+          <form>
+            <div class="form-group">
+              <label for="child">Child:{{}}</label>
+              <input type="text" id="childinfo" name="childinfo" class="form-control rounded-pill">
+            </div>
+  
+            <div class="form-group">
+              <label for="meals">Meals:{{adminPost.meals}}</label>
+              <input type="text" id="meals" name="meals" class="form-control rounded-pill">
+            </div>
+  
+            <div class="form-group">
+              <label for="activities">Activities:{{adminPost.activities}}</label>
+              <input type="text" id="activities" name="activities" class="form-control rounded-pill">
+            </div>
+  
+            <div class="form-group">
+              <label for="nap">Nap Schedule:{{adminPost.nap_schedule}}</label>
+              <input type="text" id="nap" name="nap" class="form-control rounded-pill">
+            </div>
+  
+            <div class="form-group">
+              <label for="mood">Child's Mood:{{adminPost.child_mood}}</label>
+              <input type="text" id="mood" name="mood" class="form-control rounded-pill">
+            </div>
+  
+            <div class="form-group">
+              <label for="other">Other:{{adminPost.other}}</label>
+              <input type="text" id="other" name="other" class="form-control rounded-pill">
+            </div>
+  
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
