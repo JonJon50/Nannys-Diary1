@@ -1,36 +1,26 @@
-{{!-- <div class="text-center">
-  <h2>Childs name:{{child.child_name}}</h2>
-  <p>Diet:{{child.diet_restrictions}}</p>
-  <p>Medication:{{child.medications}}</p>
-  <p>Other:{{child.other}}</p>
-
-
-
-  <form class="new-comment">
-    <label for="post-comment">Other:</label>
-    <input class="form-input" type="text" id="post-comment" name="post-comment" />
-    <button class="submitComment" type="submit" class="btn btn-primary">Create</button>
-  </form>
-</div> --}}
-
-<div class="container col-md-6"
-  style="margin-top: 2.5em; background-color: #f8f9fa; border: 3px solid rgb(247, 243, 243);">
+<!-- Child information section -->
+<div class="container col-md-6" style="margin-top: 2.5em; background-color: #f8f9fa; border: 3px solid rgb(247, 243, 243);">
   <div class="row">
     <div class="col-md-6 offset-md-3">
       <h2 class="text-center" style="margin: 1.5em;">{{child.child_name}}</h2>
 
+      <!-- Diet restriction section -->
       <div class="row" style="margin-top: 1em;">
         <div class="col-md-12">
           <p><strong>Diet Restriction:</strong></p>
           <p>{{child.diet_restrictions}}</p>
         </div>
       </div>
+
+      <!-- Medication section -->
       <div class="row">
         <div class="col-md-12">
           <p><strong>Medication:</strong></p>
           <p>{{child.medications}}</p>
         </div>
       </div>
+
+      <!-- Other section -->
       <div class="row">
         <div class="col-md-12">
           <p><strong>Other:</strong></p>
@@ -38,21 +28,20 @@
         </div>
       </div>
 
+      <!-- Add comment form -->
       <form class="new-comment">
         <div class="form-group">
-          <textarea class="form-control" id="post-comment" name="post-comment" rows="3"
-            placeholder="Parent's Notes:"></textarea>
+          <textarea class="form-control" id="post-comment" name="post-comment" rows="3" placeholder="Parent's Notes:"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary rounded-pill"
-          style="margin-top: 20px; margin-bottom: 20px;">Submit</button>
+        <button type="submit" class="btn btn-primary rounded-pill" style="margin-top: 20px; margin-bottom: 20px;">Submit</button>
       </form>
     </div>
   </div>
 </div>
 
+<!-- Display existing comments section -->
 {{#if comments.length}}
-<div class="container col-md-6 mx-auto mt-3 child-list"
-  style="background-color: #f8f9fa; border: 3px solid rgb(247, 243, 243);">
+<div class="container col-md-6 mx-auto mt-3 child-list" style="background-color: #f8f9fa; border: 3px solid rgb(247, 243, 243);">
   <h3 class="text-center" style="margin: 1.5em;">Parent's Notes:</h3>
 
   {{#each comments as |comment|}}
@@ -62,6 +51,7 @@
       <p style="">{{comment.date_created}}</p>
     </div>
     <div class="col-md-4">
+      <!-- Delete comment button -->
       {{!-- <button class="btn btn-sm btn-danger rounded-pill" style="margin-top: 1em; width: 100%;"
         data-id="{{comment.id}}">DELETE</button> --}}
     </div>
@@ -69,31 +59,5 @@
   {{/each}}
 </div>
 {{/if}}
-</div>
-
-{{!-- {{#if comments.length}}
-<div class="col-md-6 mx-auto mt-3 child-list">
-  <h3 class="text-center">Child's comments:</h3>
-
-
-  {{#each comments as |comment|}}
-  <div class="row mb-2">
-    <div class="col-md-8">
-      <textarea>
-        {{comment.post_comment}}
-        {{comment.date_created}}
-      </textarea>
-
-    </div>
-    <div class="col-md-4">
-      <button class="btn btn-sm btn-danger rounded-pill" data-id="{{child.id}}">DELETE</button>
-    </div>
-  </div>
-  {{/each}}
-</div>
-{{/if}}
-</div> --}}
-
-
-
+<!-- JavaScript file -->
 <script src="/js/comments.js"></script>

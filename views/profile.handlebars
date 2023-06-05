@@ -29,15 +29,13 @@
         </div>
         <button type="submit" class="btn btn-primary rounded-pill"
           style="margin-top: 20px; margin-bottom: 20px;">Submit</button>
+      </form>
     </div>
   </div>
-  </form>
-
 
   {{#if children.length}}
-  <div class="col-md-6 mx-auto mt-3 child-list" >
+  <div class="col-md-6 mx-auto mt-3 child-list">
     <h3 class="text-center">Child's Profile:</h3>
-
 
     {{#each children as |child|}}
     <div class="row mb-2">
@@ -54,4 +52,4 @@
   {{/if}}
 </div>
 
-<script src="./js/dashdoor.js"></script>
+<script src="../public/js/dashdoor.js"></script>
